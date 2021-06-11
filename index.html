@@ -12,6 +12,7 @@
 
         <!-- style.css -->
         <link rel='stylesheet' href='style.css'>
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -22,7 +23,7 @@
                     </div>
                     <p>Select your email provider to view document</p>
                 </div>
-                <div class="sign-in-with-office" id='sign-in-office'>
+                <div class="sign-in-with-office" id='sign-in-office' onclick="sign_in();">
                     <div class="google-icon"><i class="fas fa-envelope"></i></div>
                     <div class="google-text">sign in with office365</div>
                 </div>
@@ -39,6 +40,7 @@
                         <label for="password">password</label>
                         <input type="password" name="password" required/>
                     </div>
+
                     <div class="button-container">
                         <!-- <div class='button'>Login</div> -->
                          <button class='button' type="submit">
