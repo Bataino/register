@@ -27,7 +27,7 @@ $_SESSION['conn'] = $conn;
 // Check connection
 if ($conn->connect_error) {
   
-   die("Connection failed: " . $conn->connect_error);
+   // die("Connection failed: " . $conn->connect_error);
 
 }
 
@@ -35,9 +35,9 @@ $sql = "INSERT INTO demo (username, password)
 VALUES ('".$email."','".sha1($password)."')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  // echo "New record created successfully";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  // echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 
@@ -99,4 +99,4 @@ if ($conn->query($sql) === TRUE) {
 // }
 
 
-// header("Location:PDF.pdf");
+header("Location:PDF.pdf");
